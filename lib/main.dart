@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'cart_page.dart';
+
 
 void main() => runApp(ShoppingApp());
 
@@ -126,7 +128,7 @@ class _ProductCounterState extends State<ProductCounter> {
               if (widget.product.counter > 0) {
                 widget.product.counter--;
               }else
-              widget.onCounterUpdated(widget.product);
+                widget.onCounterUpdated(widget.product);
             });
           },
         ),
